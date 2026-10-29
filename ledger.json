@@ -12,6 +12,20 @@
       "runway": 33.8
     }
   ],
-  "products": [],
-  "posts": []
+  "products": [
+    {
+      "niche": "AI Prompt Engineering for Small Business Content Marketing",
+      "title": "The Zero-Fluff AI Content System: A Practical Prompt Guide for Solopreneurs",
+      "tagline": "Stop writing generic social media posts and learn how to engineer AI prompts that actually sound like your human brand.",
+      "path": "dl/bXNQqr_Nvz0Yc0Fk/index.html",
+      "created": "2026-10-29",
+      "earned_at_creation": 18.75
+    }
+  ],
+  "posts": [
+    {
+      "date": "2026-10-29",
+      "title": "AI Prompt Engineering for Small Business Content Marketing"
+    }
+  ]
 }

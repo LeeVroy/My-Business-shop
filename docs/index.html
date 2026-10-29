@@ -3,4 +3,17 @@
 <style>body{font-family:system-ui,sans-serif;max-width:680px;margin:0 auto;padding:16px;line-height:1.6}
 a{color:#0a58ca}code,input{word-break:break-all}input{width:100%;padding:8px;margin:6px 0}
 button{padding:10px 16px}.box{border:1px solid #ccc;border-radius:8px;padding:12px;margin:16px 0}</style></head>
-<body><p><a href="index.html">My Digital Shop</a></p><h2>Articles</h2><ul></ul></body></html>
+<body><p><a href="index.html">My Digital Shop</a></p><h1>The Zero-Fluff AI Content System: A Practical Prompt Guide for Solopreneurs</h1><p>Stop writing generic social media posts and learn how to engineer AI prompts that actually sound like your human brand.</p>
+<div class="box"><b>Price: $5 USDT (TRC20 network only)</b>
+<p>1. Send at least 5 USDT on the <b>TRC20</b> network to:</p><code>TAXiJoM8Fh2r28BsDbBUm6VJSteM1omBTN</code>
+<p>2. Paste your transaction ID (TXID) here and press the button:</p>
+<input id="tx" placeholder="Transaction ID"><button onclick="verify()">Verify and download</button>
+<p id="msg"></p></div>
+<script>const C={"addr": "TAXiJoM8Fh2r28BsDbBUm6VJSteM1omBTN", "usdt": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t", "price": 5, "link": "dl/bXNQqr_Nvz0Yc0Fk/index.html"};
+async function verify(){const tx=document.getElementById('tx').value.trim(),m=document.getElementById('msg');
+m.textContent='Checking...';try{const r=await fetch(`https://api.trongrid.io/v1/accounts/${C.addr}/transactions/trc20?only_to=true&limit=200&contract_address=${C.usdt}`);
+const j=await r.json();const t=(j.data||[]).find(x=>x.transaction_id===tx);
+if(!t){m.textContent='Payment not found yet. Wait 2 minutes after sending and try again.';return}
+const a=Number(t.value)/10**Number(t.token_info.decimals);
+if(a<C.price){m.textContent='Amount received was too low.';return}
+m.innerHTML='Payment confirmed. <a href="'+C.link+'">Download your product</a>'}catch(e){m.textContent='Could not check. Try again.'}}</script><h2>Articles</h2><ul><li><a href="posts/2026-10-29.html">AI Prompt Engineering for Small Business Content Marketing</a></li></ul></body></html>
