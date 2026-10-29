@@ -1,0 +1,17 @@
+{
+  "runway": 33.75,
+  "seen_tx": [
+    "adf11d14c1878567d89636fcc59a93ea7365de16085855d9a48e4fbc1248a726"
+  ],
+  "earned_total": 18.75,
+  "dead": false,
+  "log": [
+    {
+      "date": "2026-10-29",
+      "earned_usd": 18.75,
+      "runway": 33.8
+    }
+  ],
+  "products": [],
+  "posts": []
+}
