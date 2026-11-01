@@ -1,5 +1,5 @@
 {
-  "runway": 31.75,
+  "runway": 30.75,
   "seen_tx": [
     "adf11d14c1878567d89636fcc59a93ea7365de16085855d9a48e4fbc1248a726"
   ],
@@ -20,6 +20,11 @@
       "date": "2026-10-31",
       "earned_usd": 0.0,
       "runway": 31.8
+    },
+    {
+      "date": "2026-11-01",
+      "earned_usd": 0.0,
+      "runway": 30.8
     }
   ],
   "products": [
@@ -44,6 +49,10 @@
     {
       "date": "2026-10-31",
       "title": "Prompt Engineering for Small Business Marketing: How to Stop Getting Generic Copy"
+    },
+    {
+      "date": "2026-11-01",
+      "title": "AI Prompt Engineering for Small Business Content Marketing"
     }
   ]
 }
