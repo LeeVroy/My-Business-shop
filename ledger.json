@@ -1,5 +1,5 @@
 {
-  "runway": 28.75,
+  "runway": 27.75,
   "seen_tx": [
     "adf11d14c1878567d89636fcc59a93ea7365de16085855d9a48e4fbc1248a726"
   ],
@@ -35,6 +35,11 @@
       "date": "2026-11-03",
       "earned_usd": 0.0,
       "runway": 28.8
+    },
+    {
+      "date": "2026-11-04",
+      "earned_usd": 0.0,
+      "runway": 27.8
     }
   ],
   "products": [
@@ -71,6 +76,10 @@
     {
       "date": "2026-11-03",
       "title": "Practical AI Prompt Engineering for Small Business Content Marketing"
+    },
+    {
+      "date": "2026-11-04",
+      "title": "AI Prompt Engineering for Small Business Content Marketing"
     }
   ]
 }
