@@ -1,0 +1,99 @@
+<!doctype html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>The Zero-Waste Writer’s Vault: Obsidian Workflow Guide</title>
+<style>body{font-family:system-ui,sans-serif;max-width:680px;margin:0 auto;padding:16px;line-height:1.6}
+a{color:#0a58ca}code,input{word-break:break-all}input{width:100%;padding:8px;margin:6px 0}
+button{padding:10px 16px}.box{border:1px solid #ccc;border-radius:8px;padding:12px;margin:16px 0}</style></head>
+<body><p><a href="index.html">My Digital Shop</a></p><h1>Introduction</h1>
+<p>Most freelance writers drown in digital clutter. You have article drafts in Google Docs, client briefs in Apple Notes, invoicing spreadsheets in Excel, and research links scattered across twenty browser tabs. When it is time to write, you spend the first twenty minutes hunting for that one brilliant quote you saved last Tuesday.</p>
+<p>Obsidian solves this by storing everything locally as plain-text Markdown files. It is fast, future-proof, and entirely yours. But out of the box, a blank Obsidian vault can feel intimidating. Without a system, you will just replace your old messy desktop folders with a messy vault.</p>
+<p>This guide gives you a battle-tested, zero-fat system designed specifically for freelance writers. No complex coding, no academic &#x27;Zettelkasten&#x27; theory—just a practical framework to capture ideas, outline pieces, and track pitches efficiently.</p>
+<p>---</p>
+<h1>Part 1: Setting Up Your Vault Structure</h1>
+<p>The secret to a sustainable writing vault is resisting the urge to create endless folders. Folders force you to make a decision: *&#x27;Where does this file belong?&#x27;* Instead, rely on links and tags.</p>
+<p>Create exactly four folders in your root directory:</p>
+<p>1. `01_Projects` - Active client work, outlines, and drafts.</p>
+<p>2. `02_SwipeFile` - Hooks, headline formulas, swipe copy, and structural templates.</p>
+<p>3. `03_Resources` - Permanent notes, research, book summaries, and interview transcripts.</p>
+<p>4. `04_Admin` - Pitch trackers, rate sheets, and invoice logs.</p>
+<p>That is it. If a file does not fit neatly into one of these, it goes into your daily note or `03_Resources`.</p>
+<p>---</p>
+<h1>Part 2: The Daily Writing Dashboard</h1>
+<p>Your vault should open directly to a daily note. This acts as your scratchpad for the day. Install the core plugin <b>Daily Notes</b> and configure it to create a new note every morning with this simple template:</p>
+<p>```markdown</p>
+<h1>Daily: {{date}}</h1>
+<h2>Today&#x27;s Focus</h2>
+<ul>
+<li>[ ]</li>
+<li>[ ]</li>
+</ul>
+<h2>Quick Capture / Stray Thoughts</h2>
+<h2>Writing Sessions</h2>
+<p>-</p>
+<p>```</p>
+<p>Why do this? Because as a freelancer, you capture ideas at odd hours. If you read an interesting article while eating breakfast, paste the link into today&#x27;s &#x27;Quick Capture&#x27; section. You can process it later. Do not break your flow trying to organize it immediately.</p>
+<p>---</p>
+<h1>Part 3: Managing Client Projects &amp; Outlines</h1>
+<p>When you land a new writing assignment, do not open a new Google Doc right away. Start in Obsidian.</p>
+<p>Create a new note in `01_Projects` using this naming convention: `YYYY-MM-DD - Client Name - Article Slug`.</p>
+<p>Use this frontmatter (metadata block) at the very top of the note:</p>
+<p>```yaml</p>
+<p>---</p>
+<p>client: &quot;Acme Corp&quot;</p>
+<p>status: &quot;Drafting&quot;</p>
+<p>duedate: 2023-11-30</p>
+<p>wordcount_target: 1200</p>
+<p>---</p>
+<p>```</p>
+<p>Below the frontmatter, build your working brief using this structure:</p>
+<h2>1. Core Angle &amp; Hook</h2>
+<p>What is the contrarian view or specific angle for this piece? Write it in one sentence.</p>
+<h2>2. Target Audience</h2>
+<p>Who is reading this? (e.g., VP of Marketing at Series B startups).</p>
+<h2>3. Outline</h2>
+<ul>
+<li>Introduction:</li>
+<li>Hook:</li>
+<li>Problem:</li>
+<li>Thesis:</li>
+<li>Body Paragraph 1:</li>
+<li>Body Paragraph 2:</li>
+<li>Conclusion &amp; CTA:</li>
+</ul>
+<h2>4. Draft Area</h2>
+<p>Draft directly below your outline. Because Obsidian supports Markdown, you can write distraction-free. Use `Ctrl+Shift+I` (or `Cmd+Shift+I`) to toggle reading mode and check your formatting before pasting the text into WordPress or Google Docs.</p>
+<p>---</p>
+<h1>Part 4: Building a Reusable Swipe File</h1>
+<p>A swipe file is a writer&#x27;s greatest asset. Instead of bookmarking web pages that inevitably get buried or deleted, clip the best parts directly into `02_SwipeFile`.</p>
+<p>Create notes for:</p>
+<ul>
+<li><b>Headline Formulas:</b> Collect hooks that made you stop scrolling. Tag them `#hook/curiosity`, `#hook/fear`, or `#hook/statistic`.</li>
+<li><b>Transitions:</b> Phrases that move readers smoothly from point to point.</li>
+<li><b>Client Tone Guides:</b> Keep a summary note for each regular client detailing their preferred vocabulary, banned jargon, and style preferences (e.g., AP style vs. Chicago).</li>
+</ul>
+<p>When writing a tricky section, search your swipe file using internal links (`[[Swipe - Headlines]]`) to spark inspiration without leaving your current document.</p>
+<p>---</p>
+<h1>Part 5: Pitch &amp; Idea Tracker Without Plugins</h1>
+<p>You do not need complex database plugins to track your pitches. You can use Obsidian&#x27;s native internal linking system as a Kanban or list-based CRM.</p>
+<p>Create a note called `Pitch Tracker`. Use a simple table or bullet list format:</p>
+<p>| Publication | Pitch Topic | Date Sent | Status | Link to Notes |</p>
+<p>| :--- | :--- | :--- | :--- | :--- |</p>
+<p>| TechBlog | Why AI Won&#x27;t Replace Copywriters | 2023-10-12 | Follow-up | `[[TechBlog Pitch Draft]]` |</p>
+<p>| SaaS Mag | Async Communication Guide | 2023-10-15 | Accepted | `[[SaaS Mag Outline]]` |</p>
+<p>When you click the linked note (`[[TechBlog Pitch Draft]]`), it opens the actual pitch text, correspondence notes, and feedback in a single click. This keeps all communication context tied directly to the idea.</p>
+<p>---</p>
+<h1>Part 6: Essential Community Plugins for Writers</h1>
+<p>Obsidian’s power comes from its community plugins. Do not install dozens of them—that leads to software bloat. Instead, stick to these three productivity enhancers:</p>
+<p>1. <b>Word Spliter / Word Count Advanced:</b> Gives you a real-time word count in the status bar so you always know how close you are to your client&#x27;s target.</p>
+<p>2. <b>Local Images Plus:</b> Automatically downloads and saves external images into your vault folder when you paste them, ensuring your notes remain readable even if you are offline.</p>
+<p>3. <b>QuickAdd:</b> Allows you to set up automated hotkeys to instantly create a new project note from a template without manually navigating folders.</p>
+<p>---</p>
+<h1>Part 7: Weekly Review Checklist</h1>
+<p>A system only works if you maintain it. Set aside 20 minutes every Friday afternoon for your vault review:</p>
+<ul>
+<li>[ ] Move completed client projects from `01_Projects` to a separate archive folder (or tag them `#archived`).</li>
+<li>[ ] Review &#x27;Quick Capture&#x27; items in past daily notes and move them to `03_Resources` or delete them.</li>
+<li>[ ] Update your `Pitch Tracker` with responses received this week.</li>
+<li>[ ] Backup your vault (use GitHub, Obsidian Sync, or simply zip the folder and drop it into Google Drive/Dropbox).</li>
+</ul>
+<h1>Conclusion</h1>
+<p>Obsidian is not meant to be a work of art; it is a workbench. Start simple. Copy the templates in this guide into your vault today, use them for your next client assignment, and let your system evolve naturally around your writing habits.</p></body></html>

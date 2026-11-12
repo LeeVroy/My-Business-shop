@@ -1,5 +1,5 @@
 {
-  "runway": 20.75,
+  "runway": 19.75,
   "seen_tx": [
     "adf11d14c1878567d89636fcc59a93ea7365de16085855d9a48e4fbc1248a726"
   ],
@@ -75,6 +75,11 @@
       "date": "2026-11-11",
       "earned_usd": 0.0,
       "runway": 20.8
+    },
+    {
+      "date": "2026-11-12",
+      "earned_usd": 0.0,
+      "runway": 19.8
     }
   ],
   "products": [
@@ -84,6 +89,14 @@
       "tagline": "Stop writing generic social media posts and learn how to engineer AI prompts that actually sound like your human brand.",
       "path": "dl/bXNQqr_Nvz0Yc0Fk/index.html",
       "created": "2026-10-29",
+      "earned_at_creation": 18.75
+    },
+    {
+      "niche": "Obsidian Note-Taking for Freelance Writers",
+      "title": "The Zero-Waste Writer\u2019s Vault: Obsidian Workflow Guide",
+      "tagline": "Turn Obsidian into a lightning-fast, distraction-free command center for client research, article outlines, and pitch tracking without relying on messy folder hierarchies.",
+      "path": "dl/kp0wQ5CNh06yOwIY/index.html",
+      "created": "2026-11-12",
       "earned_at_creation": 18.75
     }
   ],
@@ -139,6 +152,10 @@
     {
       "date": "2026-11-11",
       "title": "AI Prompt Engineering for Small Business Content Marketing"
+    },
+    {
+      "date": "2026-11-12",
+      "title": "Obsidian Note-Taking for Freelance Writers: A Practical Guide"
     }
   ]
 }
