@@ -1,5 +1,5 @@
 {
-  "runway": 16.75,
+  "runway": 15.75,
   "seen_tx": [
     "adf11d14c1878567d89636fcc59a93ea7365de16085855d9a48e4fbc1248a726"
   ],
@@ -95,6 +95,11 @@
       "date": "2026-11-15",
       "earned_usd": 0.0,
       "runway": 16.8
+    },
+    {
+      "date": "2026-11-16",
+      "earned_usd": 0.0,
+      "runway": 15.8
     }
   ],
   "products": [
@@ -179,6 +184,10 @@
     {
       "date": "2026-11-15",
       "title": "Obsidian Note-Taking for Freelance Writers: A Practical Workflow"
+    },
+    {
+      "date": "2026-11-16",
+      "title": "Why Obsidian is the Ultimate Control Center for Freelance Writers"
     }
   ]
 }
