@@ -1,5 +1,5 @@
 {
-  "runway": 15.75,
+  "runway": 14.75,
   "seen_tx": [
     "adf11d14c1878567d89636fcc59a93ea7365de16085855d9a48e4fbc1248a726"
   ],
@@ -100,6 +100,11 @@
       "date": "2026-11-16",
       "earned_usd": 0.0,
       "runway": 15.8
+    },
+    {
+      "date": "2026-11-17",
+      "earned_usd": 0.0,
+      "runway": 14.8
     }
   ],
   "products": [
