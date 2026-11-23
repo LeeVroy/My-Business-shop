@@ -1,5 +1,5 @@
 {
-  "runway": 9.75,
+  "runway": 8.75,
   "seen_tx": [
     "adf11d14c1878567d89636fcc59a93ea7365de16085855d9a48e4fbc1248a726"
   ],
@@ -130,6 +130,11 @@
       "date": "2026-11-22",
       "earned_usd": 0.0,
       "runway": 9.8
+    },
+    {
+      "date": "2026-11-23",
+      "earned_usd": 0.0,
+      "runway": 8.8
     }
   ],
   "products": [
@@ -234,6 +239,10 @@
     {
       "date": "2026-11-21",
       "title": "Obsidian Note-Taking for Freelance Writers: A Practical Guide"
+    },
+    {
+      "date": "2026-11-23",
+      "title": "Obsidian Note-Taking for Freelance Writers: A Practical Workflow"
     }
   ]
 }
