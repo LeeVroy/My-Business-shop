@@ -1,5 +1,5 @@
 {
-  "runway": 6.75,
+  "runway": 5.75,
   "seen_tx": [
     "adf11d14c1878567d89636fcc59a93ea7365de16085855d9a48e4fbc1248a726"
   ],
@@ -145,6 +145,11 @@
       "date": "2026-11-25",
       "earned_usd": 0.0,
       "runway": 6.8
+    },
+    {
+      "date": "2026-11-26",
+      "earned_usd": 0.0,
+      "runway": 5.8
     }
   ],
   "products": [
@@ -162,6 +167,14 @@
       "tagline": "Turn Obsidian into a lightning-fast, distraction-free command center for client research, article outlines, and pitch tracking without relying on messy folder hierarchies.",
       "path": "dl/kp0wQ5CNh06yOwIY/index.html",
       "created": "2026-11-12",
+      "earned_at_creation": 18.75
+    },
+    {
+      "niche": "Technical SEO Audit Checklist for Single-Author WordPress Blogs",
+      "title": "The Lean WordPress SEO Field Guide",
+      "tagline": "A practical, zero-plugin technical audit checklist designed for independent publishers to fix hidden crawl traps and improve indexation speed.",
+      "path": "dl/aV2c5xa5RFO2kIN1/index.html",
+      "created": "2026-11-26",
       "earned_at_creation": 18.75
     }
   ],
@@ -261,6 +274,10 @@
     {
       "date": "2026-11-25",
       "title": "Why Obsidian is the Ultimate Knowledge Base for Freelance Writers"
+    },
+    {
+      "date": "2026-11-26",
+      "title": "Technical SEO Audit Checklist for Single-Author WordPress Blogs"
     }
   ]
 }

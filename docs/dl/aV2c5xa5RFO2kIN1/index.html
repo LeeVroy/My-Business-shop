@@ -1,0 +1,125 @@
+<!doctype html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>The Lean WordPress SEO Field Guide</title>
+<style>body{font-family:system-ui,sans-serif;max-width:680px;margin:0 auto;padding:16px;line-height:1.6}
+a{color:#0a58ca}code,input{word-break:break-all}input{width:100%;padding:8px;margin:6px 0}
+button{padding:10px 16px}.box{border:1px solid #ccc;border-radius:8px;padding:12px;margin:16px 0}</style></head>
+<body><p><a href="index.html">My Digital Shop</a></p><h1>The Lean WordPress SEO Field Guide</h1>
+<p>Most technical SEO guides are written for enterprise sites with dedicated development teams. They assume you have a staging environment, a budget for premium crawler tools, and hours to spend configuring complex caching layers. If you run a single-author WordPress blog, following that advice usually leads to plugin bloat, broken layouts, and unnecessary frustration.</p>
+<p>This guide provides a systematic, zero-cost technical SEO audit you can perform using native WordPress settings and free browser tools. Follow these steps in order to ensure search engines can efficiently crawl, render, and index your content.</p>
+<p>---</p>
+<h2>Phase 1: URL Structure and Site Identity</h2>
+<p>Before looking at code, verify that your site communicates its identity clearly to search engines.</p>
+<h3>1. Enforce HTTPS Everywhere</h3>
+<p>If even a single asset (an image, stylesheet, or script) loads over `http://`, browsers will flag your site as &quot;Not Secure,&quot; and search engines may downgrade your visibility.</p>
+<ul>
+<li>  <b>Action:</b> Go to <b>Settings &gt; General</b> in your WordPress dashboard.</li>
+<li>  <b>Check:</b> Ensure both <b>WordPress Address (URL)</b> and <b>Site Address (URL)</b> begin with `https://`.</li>
+<li>  <b>Fix:</b> If you recently migrated to HTTPS, use a free plugin like *Really Simple SSL* to force redirection, or update your `.htaccess` file directly to route all HTTP traffic to HTTPS.</li>
+</ul>
+<h3>2. Choose a Clean Permalink Structure</h3>
+<p>Ugly URLs filled with dates, category slugs, or page IDs dilute keyword relevance and create maintenance nightmares if you reorganize your content later.</p>
+<ul>
+<li>  <b>Action:</b> Go to <b>Settings &gt; Permalinks</b>.</li>
+<li>  <b>Check:</b> Ensure your structure is set to <b>Post name</b> (`/%postname%/`).</li>
+<li>  <b>Warning:</b> Do not change this setting on an established blog unless you are prepared to set up 301 redirects for every single existing URL.</li>
+</ul>
+<h3>3. Handle the &quot;WWW vs. Non-WWW&quot; Canonical Version</h3>
+<p>Search engines treat `https://example.com` and `https://www.example.com` as two entirely different websites. If both are accessible, you are splitting your inbound links and crawl budget.</p>
+<ul>
+<li>  <b>Action:</b> Go to <b>Settings &gt; General</b> and pick one preferred version for both URL fields.</li>
+<li>  <b>Check:</b> Type the non-preferred version into your browser. It should automatically 301 redirect to your preferred version.</li>
+</ul>
+<p>---</p>
+<h2>Phase 2: Indexation Control and Crawl Efficiency</h2>
+<p>Search engines have a finite &quot;crawl budget&quot; for every site. You want to make sure they spend it reading your articles, not your administrative clutter.</p>
+<h3>1. Check Search Engine Visibility</h3>
+<p>It is an embarrassing classic: launching a site or migration in development mode and forgetting to lift the restriction.</p>
+<ul>
+<li>  <b>Action:</b> Go to <b>Settings &gt; Reading</b>.</li>
+<li>  <b>Check:</b> Ensure the box labeled <b>Discourage search engines from indexing this site</b> is <b>UNCHECKED</b>.</li>
+</ul>
+<h3>2. Optimize the `robots.txt` File</h3>
+<p>Your `robots.txt` file tells search engine bots where they are allowed to go. WordPress generates a virtual one automatically, but you should verify it isn&#x27;t blocking critical assets.</p>
+<ul>
+<li>  <b>Action:</b> Navigate to `yourdomain.com/robots.txt` in your browser.</li>
+<li>  <b>Check:</b> Ensure you are not accidentally blocking your `/wp-content/uploads/` directory, as this prevents Google from indexing your images.</li>
+</ul>
+<h3>3. Clean Up Tag and Author Archives</h3>
+<p>On a single-author blog, author archive pages are completely redundant. Furthermore, if you use tags carelessly, you create dozens of thin-content archive pages that compete with your actual posts.</p>
+<ul>
+<li>  <b>Action:</b> Using your SEO plugin (Rank Math, Yoast, or SEOPress), set author archives and low-value tag archives to `noindex`.</li>
+<li>  <b>Why:</b> This prevents index bloat, ensuring search engines focus exclusively on your categories and individual posts.</li>
+</ul>
+<p>---</p>
+<h2>Phase 3: On-Page Structural Integrity</h2>
+<p>Technical SEO heavily relies on how your HTML is structured. You do not need to be a developer to verify these elements.</p>
+<h3>1. Verify Heading Hierarchy</h3>
+<p>Heading tags (`H1`, `H2`, `H3`) create a logical outline for both screen readers and search engine crawlers.</p>
+<ul>
+<li>  <b>Action:</b> Inspect your latest published post.</li>
+<li>  <b>Check:</b></li>
+<li>  There must be <b>only one H1 tag</b> per page (WordPress themes usually assign this automatically to the post title).</li>
+<li>  Subheadings should follow a logical descending order (H2 for main sections, H3 for subsections within an H2).</li>
+<li>  Never skip a heading level (e.g., jumping from an H2 straight to an H4) purely for styling purposes.</li>
+</ul>
+<h3>2. Implement Semantic HTML5 Elements</h3>
+<p>Modern themes use semantic tags to define the layout of a page.</p>
+<ul>
+<li>  <b>Action:</b> Right-click your homepage and select <b>Inspect</b>.</li>
+<li>  <b>Check:</b> Look for HTML5 structural tags such as `&lt;header&gt;`, `&lt;nav&gt;`, `&lt;main&gt;`, `&lt;article&gt;`, and `&lt;footer&gt;`. These tags help search engines distinguish between your actual content and repetitive boilerplate like sidebars and footers.</li>
+</ul>
+<h3>3. Internal Linking Architecture</h3>
+<p>Internal links are the roadmap search engines use to discover new content and understand topical relevance.</p>
+<ul>
+<li>  <b>Action:</b> Audit your last 10 published posts.</li>
+<li>  <b>Check:</b> Each post should link naturally to at least 2–3 other relevant articles on your site using descriptive anchor text (avoid generic phrases like &quot;click here&quot;).</li>
+</ul>
+<p>---</p>
+<h2>Phase 4: Performance and Core Web Vitals</h2>
+<p>Purchasing expensive hosting is rarely the fix for a slow WordPress site. Poor performance usually stems from unoptimized assets and database bloat.</p>
+<h3>1. Image Optimization Workflow</h3>
+<p>Uncompressed images are the single biggest cause of slow load times on blogs.</p>
+<ul>
+<li>  <b>Action:</b> Adopt a strict pre-upload workflow:</li>
+<li>  Resize images to a maximum width of 1200px–1600px before uploading.</li>
+<li>  Convert JPEGs and PNGs to modern formats like <b>WebP</b> whenever possible.</li>
+<li>  Always define explicit `width` and `height` attributes on image tags to prevent Cumulative Layout Shift (CLS).</li>
+</ul>
+<h3>2. Eliminate Render-Blocking Scripts</h3>
+<p>Many plugins load JavaScript and CSS in the header of your website, forcing the browser to download them before rendering your text.</p>
+<ul>
+<li>  <b>Action:</b> Use a free performance auditing tool like Google PageSpeed Insights.</li>
+<li>  <b>Check:</b> Look at the &quot;Eliminate render-blocking resources&quot; audit.</li>
+<li>  <b>Fix:</b> Use a lightweight caching plugin that offers script deferral or asynchronous loading options. Avoid installing plugins that inject stylesheets on every page when they are only needed on a single form or contact page.</li>
+</ul>
+<h3>3. Database Maintenance</h3>
+<p>Over time, your WordPress database accumulates unnecessary data, including post revisions, auto-drafts, spam comments, and transient options left behind by deleted plugins.</p>
+<ul>
+<li>  <b>Action:</b> Periodically clean your database tables.</li>
+<li>  <b>Check:</b> Limit post revisions in your `wp-config.php` file by adding this line:</li>
+</ul>
+<p>`define( &#x27;WP_POST_REVISIONS&#x27;, 5 );`</p>
+<p>This keeps your database lean without sacrificing your ability to undo recent editing mistakes.</p>
+<p>---</p>
+<h2>Phase 5: Verification and Monitoring</h2>
+<p>An audit is useless if you don&#x27;t verify that search engines have processed your changes.</p>
+<h3>1. Set Up Google Search Console</h3>
+<p>If you haven&#x27;t already, claim your site in Google Search Console.</p>
+<ul>
+<li>  <b>Action:</b> Submit your XML sitemap (usually located at `yourdomain.com/sitemap_index.xml`).</li>
+<li>  <b>Check:</b> Monitor the <b>Pages</b> report to see which URLs are indexed and investigate any pages marked as &quot;Crawled - currently not indexed&quot; or &quot;Discovered - currently not indexed.&quot;</li>
+</ul>
+<h3>2. Manual URL Inspection</h3>
+<p>Whenever you publish a major update to an important post, don&#x27;t wait around for bots to notice.</p>
+<ul>
+<li>  <b>Action:</b> Paste the URL into the Search Console inspection bar.</li>
+<li>  <b>Check:</b> Click <b>Request Indexing</b> to push the updated page directly to the front of the crawler queue.</li>
+</ul>
+<p>---</p>
+<h2>Technical SEO Maintenance Schedule</h2>
+<p>To keep your WordPress blog running smoothly, run through this condensed checklist on a regular schedule:</p>
+<ul>
+<li>  <b>Monthly:</b> Check Google Search Console for new 404 errors (broken links) and fix or redirect them.</li>
+<li>  <b>Quarterly:</b> Audit all external outbound links to ensure they still point to active, safe resources.</li>
+<li>  <b>Annually:</b> Review your site speed metrics on mobile devices and audit your active plugins to remove anything redundant.</li>
+</ul></body></html>
