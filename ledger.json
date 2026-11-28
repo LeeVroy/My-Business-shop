@@ -1,5 +1,5 @@
 {
-  "runway": 4.75,
+  "runway": 3.75,
   "seen_tx": [
     "adf11d14c1878567d89636fcc59a93ea7365de16085855d9a48e4fbc1248a726"
   ],
@@ -155,6 +155,11 @@
       "date": "2026-11-27",
       "earned_usd": 0.0,
       "runway": 4.8
+    },
+    {
+      "date": "2026-11-28",
+      "earned_usd": 0.0,
+      "runway": 3.8
     }
   ],
   "products": [
@@ -286,6 +291,10 @@
     },
     {
       "date": "2026-11-27",
+      "title": "Technical SEO Audit Checklist for Single-Author WordPress Blogs"
+    },
+    {
+      "date": "2026-11-28",
       "title": "Technical SEO Audit Checklist for Single-Author WordPress Blogs"
     }
   ]
